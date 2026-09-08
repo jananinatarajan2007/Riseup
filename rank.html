@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise Up - Video Ranking</title>
+    <!-- Updated to match standard styles.css name in your workspace -->
+    <link rel="stylesheet" href="rank.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+    <div class="sidebar">
+       
+        <ul>
+            <li>
+                <a href="home.html">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="video-ranking.html">
+                    <i class="fas fa-trophy"></i>
+                    <span>Video Ranking</span>
+                </a>
+            </li>
+            <li>
+                <a href="post.html">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Create Post</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-users"></i>
+                    <span>Communities</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+
+        <!-- ================= HEADER ================= -->
+
+        <div class="header">
+
+            <div>
+
+                <h1>AI Video Ranking</h1>
+
+                <p>
+                    Upload your performance video and receive an AI-powered sports evaluation.
+                </p>
+
+            </div>
+
+            <div class="profile">
+
+               
+
+                
+
+            </div>
+
+        </div>
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <div class="dashboard">
+
+            <div class="dashboard-card">
+
+                <i class="fa-solid fa-video"></i>
+
+                <h3>245</h3>
+
+                <p>Total Videos</p>
+
+            </div>
+
+            <div class="dashboard-card">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                <h3>Rahul Kumar</h3>
+
+                <p>Top Athlete</p>
+
+            </div>
+
+            <div class="dashboard-card">
+
+                <i class="fa-solid fa-star"></i>
+
+                <h3>9.1</h3>
+
+                <p>Average AI Score</p>
+
+            </div>
+
+            <div class="dashboard-card">
+
+                <i class="fa-solid fa-medal"></i>
+
+                <h3>62</h3>
+
+                <p>Qualified Players</p>
+
+            </div>
+
+        </div>
+
+        <!-- ================= SEARCH ================= -->
+
+        <div class="top-bar">
+
+            <input type="text" id="searchBox" placeholder="Search Athlete...">
+
+            <select id="sportFilter">
+
+                <option>All Sports</option>
+
+                <option>Basketball</option>
+
+                <option>Football</option>
+
+                <option>Cricket</option>
+
+                <option>Tennis</option>
+
+                <option>Volleyball</option>
+
+            </select>
+
+            <select id="scoreFilter">
+
+                <option>All Scores</option>
+
+                <option>9+</option>
+
+                <option>8+</option>
+
+                <option>7+</option>
+
+            </select>
+
+        </div>
+
+        <!-- ================= UPLOAD ================= -->
+
+        <div class="upload-form">
+
+            <h2>Upload Performance Video</h2>
+
+            <form id="uploadForm">
+
+                <input type="text" placeholder="Athlete Name" required>
+
+                <input type="number" placeholder="Age" required>
+
+                <select required>
+
+                    <option>Select Gender</option>
+
+                    <option>Male</option>
+
+                    <option>Female</option>
+
+                </select>
+
+                <select required>
+
+                    <option>Select Sport</option>
+
+                    <option>Basketball</option>
+
+                    <option>Football</option>
+
+                    <option>Cricket</option>
+
+                    <option>Tennis</option>
+
+                    <option>Volleyball</option>
+
+                </select>
+
+                <input type="text" placeholder="Skill (Example: Jump Shot, Bowling, Sprint)">
+
+                <input type="file" accept="video/*" required>
+
+                <textarea placeholder="Video Description"></textarea>
+
+                <button type="submit">
+
+                    Upload Video
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- ================= AI RESULT ================= -->
+
+        <div class="analysis-card">
+
+            <h2>AI Performance Analysis</h2>
+
+            <div class="overall-score">
+
+                <h1>9.3 / 10</h1>
+
+                <p>Overall AI Score</p>
+
+            </div>
+
+            <div class="metric-grid">
+
+                <div class="metric">
+
+                    <h3>🎯 Form</h3>
+
+                    <h2>9.5</h2>
+
+                </div>
+
+                <div class="metric">
+
+                    <h3>⚡ Power</h3>
+
+                    <h2>9.0</h2>
+
+                </div>
+
+                <div class="metric">
+
+                    <h3>⚖️ Control</h3>
+
+                    <h2>9.4</h2>
+
+                </div>
+
+            </div>
+
+            <div class="coach-tip">
+
+                <h3>💡 AI Coach Tip</h3>
+
+                <p>
+
+                    Great posture and balance.
+
+                    Try bending your knees slightly more before jumping
+                    to improve power.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ================= TOP VIDEOS ================= -->
+
+        <h2 class="section-title">
+
+            Top Ranked Videos
+
+        </h2>
+        <div class="video-grid" id="videoGrid">
+
+        </div>
+
+        <!-- ================= LEADERBOARD ================= -->
+
+        <h2 class="section-title">
+
+            AI Leaderboard
+
+        </h2>
+
+        <div class="leaderboard">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Rank</th>
+
+                        <th>Athlete</th>
+
+                        <th>Sport</th>
+
+                        <th>Overall</th>
+
+                        <th>Form</th>
+
+                        <th>Power</th>
+
+                        <th>Control</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="leaderboardBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- ================= RECENT ================= -->
+
+        <h2 class="section-title">
+
+            Recent Uploads
+
+        </h2>
+        <div class="recent-upload" id="recentUpload">
+
+        </div>
+
+    </div>
+
+    <!-- Changed to script.js to match standard workspace environment naming -->
+    <script src="rank.js"></script>
+</body>
+
+</html>

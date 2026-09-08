@@ -1,0 +1,293 @@
+/* ==========================
+   RISE UP - CREATE POST
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    padding:40px;
+}
+
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:auto;
+    background:#2563eb;
+    border-radius:20px;
+    padding:35px;
+    color:white;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+/* ================= Header ================= */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    padding-bottom:20px;
+}
+
+.header h1{
+    font-size:32px;
+    font-weight:600;
+}
+
+.back-btn{
+    color:white;
+    text-decoration:none;
+    font-size:24px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    color:#3b82f6;
+}
+
+.profile-icon{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+}
+.header nav{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.header nav a:hover{
+    background: #2563eb;
+    color: white;
+}
+
+/* ================= User Card ================= */
+
+.user-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:#273449;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+.user-image{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.user-card h2{
+    margin-bottom:8px;
+}
+
+.user-card p{
+    color:#cbd5e1;
+}
+
+/* ================= Text Area ================= */
+
+.post-text{
+    width:100%;
+    height:220px;
+    border:none;
+    outline:none;
+    resize:none;
+    border-radius:15px;
+    background:#273449;
+    color:white;
+    padding:20px;
+    font-size:16px;
+    margin-bottom:30px;
+}
+
+.post-text::placeholder{
+    color:#94a3b8;
+}
+
+/* ================= Two Columns ================= */
+
+.middle-section{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:30px;
+    margin-bottom:30px;
+}
+
+.section-title{
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+/* ================= Media ================= */
+
+.media-box{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.media-card{
+    background:#273449;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.media-card:hover{
+    transform:translateY(-5px);
+    background:#334155;
+}
+
+.media-card i{
+    font-size:40px;
+    color:#3b82f6;
+    margin-bottom:15px;
+}
+
+.media-card h3{
+    margin-bottom:10px;
+}
+
+.media-card p{
+    color:#cbd5e1;
+}
+
+/* ================= Categories ================= */
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.category{
+    border:none;
+    border-radius:12px;
+    padding:14px;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.category:hover{
+    transform:scale(1.04);
+}
+
+.blue{background:#173a86;}
+.yellow{background:#ca8a04;}
+.lightblue{background:#0284c7;}
+.green{background:#16a34a;}
+.red{background:#dc2626;}
+.orange{background:#ea580c;}
+.purple{background:#7c3aed;}
+.pink{background:#db2777;}
+
+/* ================= Bottom Inputs ================= */
+
+.bottom-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-top:10px;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-group label{
+    margin-bottom:10px;
+    font-weight:500;
+}
+
+.input-box{
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:#273449;
+    color:white;
+    font-size:15px;
+}
+
+.input-box::placeholder{
+    color:#94a3b8;
+}
+
+/* ================= Button ================= */
+
+.button-section{
+    text-align:center;
+    margin-top:40px;
+}
+
+.post-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:16px 50px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.post-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:900px){
+
+    .middle-section{
+        grid-template-columns:1fr;
+    }
+
+    .bottom-section{
+        grid-template-columns:1fr;
+    }
+
+    .category-container{
+        grid-template-columns:1fr;
+    }
+
+    .header h1{
+        font-size:24px;
+    }
+
+    body{
+        padding:15px;
+    }
+
+}

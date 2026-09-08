@@ -1,0 +1,97 @@
+HTML -
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise Up Dashboard</title>
+
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+    <div class="sidebar">
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <a href="#"><i class="fas fa-home"></i></a>
+        <a href="#"><i class="fas fa-comment"></i></a>
+        <a href="about.html">
+            <i class="fas fa-circle-info"></i>
+        </a>
+        <a href="rank.html">
+            <i class="fas fa-ranking-star"></i>
+        </a>
+        <a href="post.html"><i class="fas fa-plus-circle"></i></a>
+        <a href="#"><i class="fas fa-cog"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+    </div>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <div class="main-content">
+        <!-- Profile Card -->
+        <div class="profile-card">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150" alt="Profile">
+            <div class="profile-info">
+                <h2>Athlete Name</h2>
+                <p>Sports Enthusiast | Basketball Player</p>
+                <p><strong>Current Rank:</strong> #25</p>
+            </div>
+        </div>
+
+        <!-- Communities -->
+        <h2 class="section-title">Communities</h2>
+        <div class="community-container">
+            <div class="community-card">Tennis</div>
+            <div class="community-card">Sports News</div>
+            <div class="community-card">Football</div>
+            <div class="community-card">Cricket</div>
+            <div class="community-card">Basketball</div>
+        </div>
+
+        <!-- ================= POSTS SECTION ================= -->
+        <h2 class="section-title">Latest Posts</h2>
+        <div class="post-container">
+            <div class="post-card">
+                <h3>🏀 New Basketball Tournament</h3>
+                <p>Registration is now open for the District Basketball Championship.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="post-card">
+                <h3>⚽ Football Training Camp</h3>
+                <p>Join the free football coaching camp starting next week.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="post-card">
+                <h3>🏏 Cricket Scholarship</h3>
+                <p>Apply now for sports scholarships available for talented players.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= RIGHT PANEL ================= -->
+    <div class="right-panel">
+        <h2>Trending Today</h2>
+        <ul>
+            <li>🔥 Top Athlete</li>
+            <li>🏆 Regional Tournament</li>
+            <li>🎓 Sports Scholarship</li>
+            <li>💼 Sports Jobs</li>
+            <li>📢 Upcoming Events</li>
+        </ul>
+    </div>
+
+    <!-- Corrected script file source -->
+    <script src="home.js"></script>
+</body>
+
+</html>
